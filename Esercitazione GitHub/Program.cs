@@ -31,13 +31,14 @@ namespace SocketServer
             // Mettere in ascolto il server.
             // parametro: il numero massimo di connessioni da mettere in coda.
             listenerSocket.Listen(5);
-            Console.WriteLine("Server in ascolto...");
+            Console.WriteLine("Server in ascolto... Devi solo asptare");
             Console.WriteLine("in attesa di connessione da parte del client...");
             // Istruzione bloccante
             // restituisce una variabile di tipo socket.
             Socket client = listenerSocket.Accept();
 
             Console.WriteLine("Client IP: " + client.RemoteEndPoint.ToString());
+            
 
             // mi attrezzo per ricevere un messaggio dal client
             // siccome è di tipo stream io riceverò dei byte, o meglio un byte array
