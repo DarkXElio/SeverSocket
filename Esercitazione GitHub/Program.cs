@@ -31,7 +31,7 @@ namespace SocketServer
             // Mettere in ascolto il server.
             // parametro: il numero massimo di connessioni da mettere in coda.
             listenerSocket.Listen(5);
-            Console.WriteLine("Server in ascolto... Devi solo asptare");
+            Console.WriteLine("Server in ascolto...");
             Console.WriteLine("in attesa di connessione da parte del client...");
             // Istruzione bloccante
             // restituisce una variabile di tipo socket.
